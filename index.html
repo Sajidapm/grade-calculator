@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade calculator</title>
+</head>
+<body>
+    <script>
+        let name =prompt("Enter the name ");
+        let english=Number(prompt("Enter the english mark"));
+        let malayalam=Number(prompt("Enter the Malayalam mark"));
+        let physics=Number(prompt("Enter the Phisics mark")); 
+        let chemistry=Number(prompt("Enter the Chemistry mark"));
+        let biology=Number(prompt("Enter the Biology mark"));
+        let  total=english+malayalam+physics+chemistry+biology;
+         let avg=total/5;
+        if(avg>=90)
+    {  
+        grade='A+';
+    }else
+    if(avg>=80)
+    {
+        grade='A';
+    }
+    else if(avg>=70)
+        {
+            grade='B';
+    }
+    else if(avg>=60)
+    {
+        grade='C';
+    }
+    else if(avg>=50)
+    {
+        grade='D';
+    }
+    else if(avg<50)
+    {
+        grade=Failed
+    }
+    alert("Name is " +name +"\nTotal mark is" +total +"\nAvarage mark is" +avg + "\nGrade is " +grade);
+    </script>
+</body>
+</html>
+
